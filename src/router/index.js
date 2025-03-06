@@ -25,6 +25,11 @@ const router = createRouter({
       component: () => import("../views/PokemonView.vue"),
     },
     {
+      path: "/favourites",
+      name: "favourites",
+      component: () => import("../views/FavouritesView.vue"),
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: "NotFound",
       component: () => import("../views/NotFoundView.vue"),
